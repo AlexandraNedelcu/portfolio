@@ -5,10 +5,10 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
 export const Todo = ({task, toggleComplete, deleteTodo, editTodo}) => {
   return (
-    <div className='Todo'>
+    <div className='todo'>
         <p 
         onClick={() => toggleComplete(task.id)}
-        className={`${task.completed ? 'completed' : ''}`}>{task.task}</p>
+        className={`${task.completed ? 'completed todo-text' : 'todo-text'}`}>{task.task}</p>
         <div>
             <FontAwesomeIcon className="edit-icon" icon={faPenToSquare} onClick={() => editTodo(task.id)}/>
             <FontAwesomeIcon className="delete-icon" icon={faTrash} onClick={() => deleteTodo(task.id)}/>

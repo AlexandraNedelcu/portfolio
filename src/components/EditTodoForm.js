@@ -8,7 +8,7 @@ export const EditTodoForm = ({editToDo, task}) => {
         setValue('');
     }
   return (
-    <form className='TodoForm' onSubmit={handleSubmit}>
+    <form className='todo-form' onSubmit={handleSubmit}>
         <input 
         type="text" 
         className='todo-input' 

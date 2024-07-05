@@ -8,17 +8,21 @@
 }
 
 body {
+  height: 100vh;
+  width: 100vw;
   background: url(bg.jpeg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.app {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.App {
+  height: 100vh;
+  width: 100vw;
   text-align: center;
 }
 
@@ -28,22 +32,20 @@ h1 {
   font-size: 1.75rem;
 }
 
-.TodoWrapper {
+.todo-wrapper {
   background: rgba( 255, 255, 255, 0.25 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 5px );
   -webkit-backdrop-filter: blur( 5px );
   border-radius: 10px;
-  height: 40rem;
-  max-height: 40rem;
+  height: 70%;
+  max-height: 70%;
   overflow-y: auto;
-  width: 35rem;
+  width: 50%;
   padding: 2rem;
-  margin: auto;
-  margin-top: 5rem;
 }
 
-.TodoForm {
+.todo-form {
   width: 100%;
   margin-bottom: 1rem;
 }
@@ -53,11 +55,10 @@ h1 {
   background: #ffffff;
   border: none;
   padding: 0.7rem 1rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  width: 70%;
+  margin: 1rem;
+  width: 80%;
   color: #000;
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px;
 }
 
 .todo-input::placeholder {
@@ -68,13 +69,13 @@ h1 {
   background: rgb(47,177,243);
   color: #fff;
   border: none;
-  width: 30%;
+  width: 40%;
   padding: 0.7rem;
   cursor: pointer;
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px;
 }
 
-.Todo {
+.todo {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,6 +85,11 @@ h1 {
   border-radius: 5px;
   margin-bottom: 1rem;
   cursor: pointer;
+}
+
+.todo-text {
+  text-align: left;
+  max-width: 80%;
 }
 
 .fa-trash {
